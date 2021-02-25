@@ -23,7 +23,7 @@ public class InputReader {
         try {
             List<String> lines = Files.readAllLines(absolutePath);
             String[] firstLine = lines.get(0).split(" ");
-            System.out.println(Arrays.deepToString(firstLine));
+            //System.out.println(Arrays.deepToString(firstLine));
 
             int durationOfSimulation = Integer.parseInt(firstLine[0]);
             int numberOfIntersections = Integer.parseInt(firstLine[1]);
@@ -35,7 +35,7 @@ public class InputReader {
             Map<String, Street> streetMap = new HashMap<>();
             List<Street> streets = new ArrayList<>();
 
-            for(int i = 1; i < numberOfStreets;i++) {
+            for(int i = 1; i < numberOfStreets+1;i++) {
                 String[] streetLine = lines.get(i).split(" ");
                 int startIntersection = Integer.parseInt(streetLine[0]);
                 int endIntersections = Integer.parseInt(streetLine[1]);
@@ -48,35 +48,46 @@ public class InputReader {
                 intersectionMap.get(startIntersection).outgoing.add(street);
 
                 intersectionMap.putIfAbsent(endIntersections, new Intersection(endIntersections));
-                intersectionMap.get(endIntersections).incomming.add(street);
+                intersectionMap.get(endIntersections).incoming.add(street);
 
                 street.setStart(intersectionMap.get(startIntersection));
                 street.setEnd(intersectionMap.get(endIntersections));
 
-                streetMap.putIfAbsent(nameOfStreet, street);
+                streetMap.put(nameOfStreet, street);
                 streets.add(street);
+
+           //     System.out.println(street);
             }
 
             List<Car> allCars = new ArrayList<>();
 
-            for(int i = numberOfStreets; i < numberOfStreets + numberOfCars; i++){
+            for(int i = numberOfStreets+1; i < numberOfStreets + numberOfCars + 1; i++){
                 String[] carline = lines.get(i).split(" ");
                 int carNumberOfStreets = Integer.parseInt(carline[0]);
 
                 List<Street> streetList = new ArrayList<>();
                 Street startingStreet = null;
+                int idOfCar = 0;
 
+             //   System.out.println(Arrays.deepToString(carline));
                 for(int j = 1; j < carline.length; j++) {
+
+                   // System.out.println(carline[j]);
+                  //  System.out.println(streetMap.get(carline[j]));
                     streetList.add(streetMap.get(carline[j]));
 
                     if(j == 1) {
                         startingStreet = streetMap.get(carline[j]);
                     }
+
+                    idOfCar = j;
                 }
 
-                Car car = new Car(carNumberOfStreets, streetList, startingStreet);
+                Car car = new Car(idOfCar, carNumberOfStreets, streetList, startingStreet);
                 startingStreet.getCarList().add(car);
                 allCars.add(car);
+
+               // System.out.println(car);
             }
 
             problemStatement.initProblem(allCars, streets, durationOfSimulation, numberOfIntersections, bonusPoints, intersectionMap, streetMap);

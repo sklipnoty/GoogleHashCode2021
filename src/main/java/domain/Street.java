@@ -54,4 +54,16 @@ public class Street {
     public int hashCode() {
         return Objects.hash(name);
     }
+
+    @Override
+    public String toString() {
+        return "Street{" +
+                "name='" + name + '\'' +
+                ", time=" + time +
+                ", trafficLight=" + trafficLight +
+                ", start=" + start +
+                ", end=" + end +
+                ", carList=" + carList +
+                '}';
+    }
 }

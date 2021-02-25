@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Intersection {
     public Integer id;
-    public List<Street> incomming = new ArrayList<>();
+    public List<Street> incoming = new ArrayList<>();
     public List<Street> outgoing = new ArrayList<>();
 
     public Intersection(int startIntersection) {
