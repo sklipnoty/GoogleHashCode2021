@@ -14,6 +14,46 @@ public class Solver {
 
     }
 
+    public  Map<Intersection, AbstractMap.SimpleEntry<Street, Integer>> determineIntersectionPriority() {
+        Map<Intersection, AbstractMap.SimpleEntry<Street, Integer>> priorityMap = new HashMap<>();
+
+        for (Intersection intersection : this.problemStatement.intersectionMap.values()) {
+
+            Map<Integer, Street> maxMap = new HashMap<>();
+
+            for (Street street : intersection.incoming) {
+                int totalCost = 0;
+
+                for (Car car : street.getCarList()) {
+                    totalCost += car.calcPathCost();
+
+                    if(street.getCarList().size() == 0) {
+                        totalCost += Integer.MAX_VALUE;
+                    }
+                }
+
+                maxMap.putIfAbsent(totalCost, street);
+            }
+
+            Integer minValue = Collections.min(maxMap.keySet());
+
+            // fill in priorities
+            priorityMap.putIfAbsent(intersection,new AbstractMap.SimpleEntry<Street, Integer>(maxMap.get(minValue), minValue));
+        }
+
+        return priorityMap;
+    }
+
+    public List<TrafficLightSchedule> greedySolveV2(){
+        for(int i = 0; i < this.problemStatement.durationOfSimulation; i++) {
+
+            // Foreach intersection determine the best starting street!
+            Map<Intersection, AbstractMap.SimpleEntry<Street, Integer>> priority = determineIntersectionPriority();
+
+
+        }
+    }
+
     public List<TrafficLightSchedule> greedySolve(){
 
         int duration = 0;

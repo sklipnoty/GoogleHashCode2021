@@ -30,7 +30,6 @@ public class OutputWriter {
 
             List<String> outputs = new ArrayList<>();
             int totalNumberOfIntersections = 0;
-            Set<Intersection> alreadyVisited = new HashSet<>();
 
             for(Intersection intersection : intersectionSet) {
 
@@ -50,7 +49,6 @@ public class OutputWriter {
             for(String output : outputs) {
                 printWriter.println(output);
             }
-
 
             printWriter.flush();
 
