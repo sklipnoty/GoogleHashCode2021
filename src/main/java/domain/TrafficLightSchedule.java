@@ -7,5 +7,7 @@ import java.util.List;
  * List of pairs street + duration
  */
 public class TrafficLightSchedule {
-    public List<AbstractMap.SimpleEntry<Street, Long>> scheduleList;
+    public Intersection intersection;
+    public Street incomingStreet;
+    public Integer duration;
 }

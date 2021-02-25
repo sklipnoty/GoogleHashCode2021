@@ -1,5 +1,8 @@
 package domain;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Objects;
 
 public class Street {
@@ -8,6 +11,7 @@ public class Street {
     public TrafficLight trafficLight;
     protected Intersection start;
     protected Intersection end;
+    public List<Car> carList = new ArrayList<>();
 
     public Street(String nameOfStreet, int timeToPassStreet) {
         this.name = nameOfStreet;
@@ -28,6 +32,14 @@ public class Street {
 
     public void setEnd(Intersection end) {
         this.end = end;
+    }
+
+    public List<Car> getCarList() {
+        return carList;
+    }
+
+    public void setCarList(List<Car> carList) {
+        this.carList = carList;
     }
 
     @Override

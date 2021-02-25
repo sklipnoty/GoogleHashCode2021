@@ -64,12 +64,18 @@ public class InputReader {
                 int carNumberOfStreets = Integer.parseInt(carline[0]);
 
                 List<Street> streetList = new ArrayList<>();
+                Street startingStreet = null;
 
                 for(int j = 1; j < carline.length; j++) {
                     streetList.add(streetMap.get(carline[j]));
+
+                    if(j == 1) {
+                        startingStreet = streetMap.get(carline[j]);
+                    }
                 }
 
-                Car car = new Car(carNumberOfStreets, streetList);
+                Car car = new Car(carNumberOfStreets, streetList, startingStreet);
+                startingStreet.getCarList().add(car);
                 allCars.add(car);
             }
 
