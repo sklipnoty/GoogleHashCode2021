@@ -10,6 +10,7 @@ public class TrafficLightSchedule {
     public Intersection intersection;
     public Street incomingStreet;
     public Integer duration;
+    public Integer pickedAtDuration;
 
     public TrafficLightSchedule(Intersection intersection, Street incomingStreet, Integer duration) {
         this.intersection = intersection;
@@ -41,12 +42,21 @@ public class TrafficLightSchedule {
         this.duration = duration;
     }
 
+    public Integer getPickedAtDuration() {
+        return pickedAtDuration;
+    }
+
+    public void setPickedAtDuration(Integer pickedAtDuration) {
+        this.pickedAtDuration = pickedAtDuration;
+    }
+
     @Override
     public String toString() {
         return "TrafficLightSchedule{" +
                 "intersection=" + intersection +
                 ", incomingStreet=" + incomingStreet +
                 ", duration=" + duration +
+                ", pickedAtDuration=" + pickedAtDuration +
                 '}';
     }
 }

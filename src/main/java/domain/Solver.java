@@ -75,22 +75,24 @@ public class Solver {
 
 
             for (Intersection intersection : priorityMap.keySet()) {
-                TrafficLightSchedule trafficLightSchedule = new TrafficLightSchedule(intersection, priorityMap.get(intersection), 1);
-                //System.out.println(trafficLightSchedule);
 
                 if(priorityMap.get(intersection).getCarList().size() == 0)
                     continue;
 
+                TrafficLightSchedule trafficLightSchedule = new TrafficLightSchedule(intersection, priorityMap.get(intersection), 1);
+                //System.out.println(trafficLightSchedule);
+                trafficLightSchedule.pickedAtDuration = i;
                 Car travelling = priorityMap.get(intersection).carList.get(0);
                 travelling.setCurrentNeededDuration(priorityMap.get(intersection).time);
                 travellingCars.add(travelling);
                 trafficLightScheduleList.add(trafficLightSchedule);
+
+                break;
             }
 
         }
 
         return trafficLightScheduleList;
-
     }
 
 

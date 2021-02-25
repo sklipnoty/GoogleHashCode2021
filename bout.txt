@@ -1,4 +1,1182 @@
+333
+2529
 1
-7306
+cfci-cfcj 5070
+5089
 1
-hcde-hdag 1
+faih-faij 5070
+994
+1
+hac-jje 5070
+6629
+1
+ggda-ggcj 5070
+6637
+1
+ggdi-ggdh 5070
+6638
+1
+gfjh-ggdi 5070
+3569
+1
+dcah-dfgj 5070
+1522
+1
+bihe-bfcc 5070
+3570
+2
+dcag-dfha 5070
+dcag-dfha 5070
+3571
+1
+dcaf-dfhb 5070
+3572
+1
+dcai-dfhc 5070
+4084
+1
+djib-eaie 5070
+3573
+1
+dcah-dfhd 5070
+4087
+1
+eajc-eaih 5070
+1528
+1
+bifb-bfci 5070
+3576
+3
+dfhj-dfhg 5070
+dfhj-dfhg 5070
+dfhj-dfhg 5070
+1019
+2
+fdj-babj 5070
+fdj-babj 5070
+3579
+2
+dfha-dfhj 5070
+dfha-dfhj 5070
+4092
+1
+eaig-eajc 5070
+1536
+1
+gc-bfdg 5070
+2561
+1
+cfga-cfgb 5070
+4100
+1
+eaji-ebaa 5070
+5637
+1
+eebb-fgdh 5070
+5638
+1
+fgdh-fgdi 5070
+6662
+2
+gggd-gggc 5070
+gggd-gggc 5070
+5639
+3
+fgdi-fgdj 5070
+fgdi-fgdj 5070
+fgdi-fgdj 5070
+14
+4
+chj-be 5070
+chj-be 5070
+chj-be 5070
+chj-be 5070
+3089
+2
+cjci-daij 5070
+cjci-daij 5070
+4626
+1
+egch-egcg 5070
+6675
+2
+gghi-gghf 5070
+gghi-gghf 5070
+2580
+1
+cfig-cfia 5070
+6678
+2
+gghh-gghi 5070
+gghh-gghi 5070
+3096
+1
+dcbe-dajg 5070
+25
+1
+cg-cf 5070
+2586
+1
+cfic-cfig 5070
+3098
+2
+dbad-daji 5070
+dbad-daji 5070
+5660
+3
+fggb-fgga 5070
+fggb-fgga 5070
+fggb-fgga 5070
+3103
+2
+dbac-dbad 5070
+dbac-dbad 5070
+2080
+1
+cfcb-caia 5070
+2592
+1
+cfia-cfjc 5070
+6177
+1
+gcbb-gbhh 5070
+4642
+1
+eged-egec 5070
+5666
+1
+fgid-fggg 5070
+547
+1
+chf-feh 5070
+4643
+2
+egef-eged 5070
+egef-eged 5070
+5670
+2
+fghb-fgha 5070
+fghb-fgha 5070
+5671
+2
+fgij-fghb 5070
+fgij-fghb 5070
+2090
+1
+cfgb-caja 5070
+5675
+1
+fghi-fghf 5070
+3116
+1
+dbbh-dbbg 5070
+4140
+1
+ebdh-ebea 5070
+2093
+1
+caja-cajd 5070
+4141
+1
+ebea-ebeb 5070
+4144
+2
+ebej-ebee 5070
+ebej-ebee 5070
+5680
+3
+fgib-fgia 5070
+fgib-fgia 5070
+fgib-fgia 5070
+5681
+3
+fgga-fgib 5070
+fgga-fgib 5070
+fgga-fgib 5070
+5683
+1
+fgje-fgid 5070
+4148
+1
+ebee-ebei 5070
+5172
+2
+fbjj-fbhc 5070
+fbjj-fbhc 5070
+4663
+1
+gbfg-eggd 5070
+2617
+1
+cgbg-cgbh 5070
+2108
+2
+cbbc-cbai 5070
+cbbc-cbai 5070
+2112
+2
+cbba-cbbc 5070
+cbba-cbbc 5070
+3136
+1
+dbeb-dbdg 5070
+4673
+1
+egih-eghd 5070
+6722
+2
+ghbh-ghcc 5070
+ghbh-ghcc 5070
+6211
+4
+gcda-gcbb 5070
+gcda-gcbb 5070
+gcda-gcbb 5070
+gcda-gcbb 5070
+3141
+1
+dbei-dbeb 5070
+4677
+1
+egia-eghh 5070
+5190
+2
+fbjg-fbja 5070
+fbjg-fbja 5070
+4680
+1
+egig-egia 5070
+5192
+1
+fbhc-fbjc 5070
+1611
+1
+caaf-bgbb 5070
+6230
+5
+gcdf-gcda 5070
+gcdf-gcda 5070
+gcdf-gcda 5070
+gcdf-gcda 5070
+gcdf-gcda 5070
+2136
+2
+cbfd-cbdg 5070
+cbfd-cbdg 5070
+2141
+1
+cbii-cbeb 5070
+607
+2
+bcde-gah 5070
+bcde-gah 5070
+2144
+1
+cbeb-cbee 5070
+5728
+1
+fhda-fhci 5070
+5729
+1
+fhci-fhcj 5070
+3170
+2
+dbgj-dbha 5070
+dbgj-dbha 5070
+5730
+2
+fhdb-fhda 5070
+fhdb-fhda 5070
+6754
+1
+ghfc-ghfe 5070
+2147
+1
+cbfd-cbeh 5070
+3683
+2
+dgje-dgid 5070
+dgje-dgid 5070
+5731
+1
+fhec-fhdb 5070
+1637
+1
+ici-bgdh 5070
+1638
+1
+bdia-bgdi 5070
+2150
+1
+cbdg-cbfa 5070
+1641
+3
+bbcf-bgeb 5070
+bbcf-bgeb 5070
+bbcf-bgeb 5070
+3177
+1
+dbhj-dbhh 5070
+5225
+1
+fcce-fccf 5070
+6249
+1
+gcje-gcej 5070
+3179
+1
+dcac-dbhj 5070
+3694
+1
+dgja-dgje 5070
+624
+1
+iag-gce 5070
+3184
+1
+dbha-dbie 5070
+5744
+1
+fhed-fhee 5070
+2673
+1
+cghe-cghd 5070
+3185
+1
+dbie-dbif 5070
+2674
+1
+cgge-cghe 5070
+1139
+3
+be-bbdj 5070
+be-bbdj 5070
+be-bbdj 5070
+4213
+1
+ecaj-ecbd 5070
+5749
+1
+fhee-fhej 5070
+1660
+2
+gih-bgga 5070
+gih-bgga 5070
+1661
+1
+bgga-bggb 5070
+2687
+2
+cgii-cgih 5070
+cgii-cgih 5070
+6783
+2
+ghhh-ghid 5070
+ghhh-ghid 5070
+6784
+1
+ghid-ghie 5070
+129
+2
+bbag-bcj 5070
+bbag-bcj 5070
+642
+3
+ddj-gec 5070
+ddj-gec 5070
+ddj-gec 5070
+3202
+1
+dcaa-dcac 5070
+5250
+2
+ffgb-fcfa 5070
+ffgb-fcfa 5070
+1669
+3
+eid-bggj 5070
+eid-bggj 5070
+eid-bggj 5070
+1158
+5
+ibg-bbfi 5070
+ibg-bbfi 5070
+ibg-bbfi 5070
+ibg-bbfi 5070
+ibg-bbfi 5070
+4742
+1
+ehee-ehec 5070
+4744
+1
+feah-ehee 5070
+5769
+1
+fhff-fhgj 5070
+6281
+1
+gcic-gcib 5070
+652
+1
+ha-gfc 5070
+2188
+1
+cbja-cbii 5070
+653
+1
+gfc-gfd 5070
+2190
+1
+cbij-cbja 5070
+4752
+1
+giaa-ehfc 5070
+4753
+2
+fbgf-ehfd 5070
+fbgf-ehfd 5070
+6290
+1
+gdcf-gcja 5070
+6803
+1
+giac-giad 5070
+149
+1
+eja-bej 5070
+6805
+1
+gibf-giaf 5070
+6294
+1
+gcjf-gcje 5070
+2711
+2
+chbc-chbb 5070
+chbc-chbb 5070
+152
+1
+cac-bfc 5070
+2712
+2
+chbd-chbc 5070
+chbd-chbc 5070
+6810
+1
+giae-giba 5070
+6813
+1
+gibi-gibd 5070
+1182
+2
+bbhj-bbic 5070
+bbhj-bbic 5070
+159
+1
+bjdh-bfj 5070
+4767
+2
+ehga-ehgh 5070
+ehga-ehgh 5070
+6303
+3
+gdaf-gdad 5070
+gdaf-gdad 5070
+gdaf-gdad 5070
+1698
+3
+fhh-bgji 5070
+fhh-bgji 5070
+fhh-bgji 5070
+6818
+2
+giae-gibi 5070
+giae-gibi 5070
+166
+1
+cba-bgg 5070
+168
+1
+dcb-bgi 5070
+681
+2
+ehj-gib 5070
+ehj-gib 5070
+684
+1
+bggb-gie 5070
+5292
+1
+ghie-fcjc 5070
+3245
+1
+dcdj-dcef 5070
+2225
+2
+cccg-cccf 5070
+cccg-cccf 5070
+690
+1
+fic-gja 5070
+2226
+2
+ccca-cccg 5070
+ccca-cccg 5070
+4275
+1
+echb-echf 5070
+6835
+1
+gidg-gidf 5070
+6325
+2
+gbai-gdcf 5070
+gbai-gdcf 5070
+5301
+1
+gdig-fdab 5070
+2743
+1
+cghd-ched 5070
+2745
+1
+ched-chef 5070
+702
+1
+haa-hac 5070
+1222
+1
+beii-bccc 5070
+1224
+2
+bjaj-bcce 5070
+bjaj-bcce 5070
+1736
+2
+babj-bhdg 5070
+babj-bhdg 5070
+713
+1
+db-hbd 5070
+202
+1
+idj-cac 5070
+4812
+1
+eiaj-eibc 5070
+1745
+1
+haf-bhef 5070
+210
+1
+bgi-cba 5070
+3284
+1
+dcij-dcie 5070
+1749
+1
+hfc-bhej 5070
+3285
+1
+dcie-dcif 5070
+3289
+1
+dcih-dcij 5070
+5338
+3
+fddg-fddi 5070
+fddg-fddi 5070
+fddg-fddi 5070
+3805
+2
+dhjh-diaf 5070
+dhjh-diaf 5070
+5341
+1
+eggd-fdeb 5070
+2276
+1
+cchj-cchg 5070
+6886
+1
+giij-giig 5070
+6889
+2
+giie-giij 5070
+giie-giij 5070
+236
+2
+hih-cdg 5070
+hih-cdg 5070
+2796
+2
+chjc-chjg 5070
+chjc-chjg 5070
+5356
+1
+gejf-fdfg 5070
+752
+1
+bjib-hfc 5070
+1776
+1
+bcgj-bhhg 5070
+1264
+1
+bhhg-bcge 5070
+6386
+2
+gdij-gdig 5070
+gdij-gdig 5070
+758
+1
+gah-hfi 5070
+4343
+1
+edfi-eded 5070
+4344
+1
+eded-edee 5070
+5369
+2
+egea-fdgj 5070
+egea-fdgj 5070
+5370
+1
+fdgj-fdha 5070
+4347
+4
+edfd-edeh 5070
+edfd-edeh 5070
+edfd-edeh 5070
+edfd-edeh 5070
+1276
+3
+gfb-bchg 5070
+gfb-bchg 5070
+gfb-bchg 5070
+5372
+1
+fdha-fdhc 5070
+4349
+2
+edfb-edej 5070
+edfb-edej 5070
+4351
+3
+fgii-edfb 5070
+fgii-edfb 5070
+fgii-edfb 5070
+4353
+4
+edej-edfd 5070
+edej-edfd 5070
+edej-edfd 5070
+edej-edfd 5070
+2305
+1
+cdag-cdaf 5070
+2306
+1
+cejb-cdag 5070
+1283
+1
+bbic-bcid 5070
+1795
+1
+bbbb-bhjf 5070
+1284
+2
+bcii-bcie 5070
+bcii-bcie 5070
+4358
+3
+edeh-edfi 5070
+edeh-edfi 5070
+edeh-edfi 5070
+776
+1
+egd-hhg 5070
+2313
+1
+cdbf-cdbd 5070
+5897
+5
+fjaf-fijh 5070
+fjaf-fijh 5070
+fjaf-fijh 5070
+fjaf-fijh 5070
+fjaf-fijh 5070
+4362
+1
+gedi-edgc 5070
+6412
+1
+geac-gebc 5070
+1297
+1
+ca-bcjh 5070
+275
+1
+chh-chf 5070
+5395
+1
+fdih-fdjf 5070
+277
+1
+baa-chh 5070
+279
+5
+bahh-chj 5070
+bahh-chj 5070
+bahh-chj 5070
+bahh-chj 5070
+bahh-chj 5070
+4379
+2
+edid-edhj 5070
+edid-edhj 5070
+3870
+1
+digh-diha 5070
+5918
+2
+fjbh-fjbi 5070
+fjbh-fjbi 5070
+4383
+2
+edia-edid 5070
+edia-edid 5070
+5407
+1
+fdih-feah 5070
+292
+1
+cja-cjc 5070
+2341
+1
+cdea-cdeb 5070
+806
+1
+eac-iag 5070
+5420
+1
+fdjf-feca 5070
+1844
+1
+bied-biee 5070
+2363
+1
+cchg-cdgd 5070
+3387
+1
+defd-ddih 5070
+6460
+1
+gefh-gega 5070
+1853
+1
+bead-bifd 5070
+4413
+1
+eebg-eebd 5070
+5437
+2
+fech-fedh 5070
+fech-fedh 5070
+1342
+3
+bcjj-bdec 5070
+bcjj-bdec 5070
+bcjj-bdec 5070
+4414
+2
+fgdj-eebe 5070
+fgdj-eebe 5070
+321
+1
+ec-dcb 5070
+6979
+3
+gaee-gjhj 5070
+gaee-gjhj 5070
+gaee-gjhj 5070
+5958
+1
+fjfe-fjfi 5070
+1353
+1
+bcea-bdfd 5070
+3913
+1
+diha-djbd 5070
+6473
+1
+gejb-gehd 5070
+1362
+3
+bggj-bdgc 5070
+bggj-bdgc 5070
+bggj-bdgc 5070
+1874
+1
+bcdh-bihe 5070
+5970
+1
+fjie-fjha 5070
+5974
+1
+fjhf-fjhe 5070
+1367
+1
+bhef-bdgh 5070
+5975
+1
+fjif-fjhf 5070
+6496
+1
+gfdd-gejg 5070
+1891
+1
+befd-bijb 5070
+1379
+1
+bgdi-bdhj 5070
+5989
+1
+fjjc-fjij 5070
+359
+1
+bgeb-dfj 5070
+5992
+3
+fjjb-fjjc 5070
+fjjb-fjjc 5070
+fjjb-fjjc 5070
+6504
+1
+gfce-gfae 5070
+6505
+1
+gfde-gfaf 5070
+362
+2
+jdc-dgc 5070
+jdc-dgc 5070
+5994
+1
+fjij-fjje 5070
+3947
+1
+djeg-djeh 5070
+3436
+1
+eaie-dedg 5070
+1392
+1
+bej-bdjc 5070
+2928
+2
+chjg-cjci 5070
+chjg-cjci 5070
+370
+1
+bbfc-dha 5070
+6002
+1
+fjjh-gaac 5070
+1909
+2
+bcai-bjaj 5070
+bcai-bjaj 5070
+375
+3
+dha-dhf 5070
+dha-dhf 5070
+dha-dhf 5070
+6521
+1
+gfdd-gfcb 5070
+378
+1
+dhh-dhi 5070
+892
+2
+bjhd-ijc 5070
+bjhd-ijc 5070
+6524
+1
+gejg-gfce 5070
+3453
+1
+dehf-defd 5070
+895
+1
+ijg-ijf 5070
+896
+1
+jeb-ijg 5070
+2948
+1
+ebad-cjei 5070
+6533
+3
+gfea-gfdd 5070
+gfea-gfdd 5070
+gfea-gfdd 5070
+5512
+1
+ffeb-ffbc 5070
+6026
+2
+gacc-gacg 5070
+gacc-gacg 5070
+5002
+2
+faaj-faac 5070
+faaj-faac 5070
+401
+1
+iae-eab 5070
+5009
+2
+fehb-faaj 5070
+fehb-faaj 5070
+402
+1
+bfci-eac 5070
+3475
+3
+debc-dehf 5070
+debc-dehf 5070
+debc-dehf 5070
+6547
+2
+gfei-gfeh 5070
+gfei-gfeh 5070
+6548
+2
+gfej-gfei 5070
+gfej-gfei 5070
+1433
+1
+bedb-bedd 5070
+1434
+2
+begc-bede 5070
+begc-bede 5070
+5022
+1
+fach-facc 5070
+6046
+2
+gafc-gaeg 5070
+gafc-gaeg 5070
+6558
+1
+gfga-gffi 5070
+6047
+1
+gaeg-gaeh 5070
+6560
+1
+gfif-gfga 5070
+5026
+1
+facc-facg 5070
+6050
+1
+gaeh-gafa 5070
+5027
+1
+fhcb-fach 5070
+5541
+3
+ffed-ffeb 5070
+ffed-ffeb 5070
+ffed-ffeb 5070
+5542
+2
+ffed-ffec 5070
+ffed-ffec 5070
+4518
+1
+fddi-efbi 5070
+424
+1
+de-ece 5070
+936
+2
+fhi-jdg 5070
+fhi-jdg 5070
+6056
+1
+gaff-gafg 5070
+6057
+1
+gafg-gafh 5070
+6569
+2
+gfeh-gfgj 5070
+gfeh-gfgj 5070
+6571
+2
+gffa-gfhb 5070
+gffa-gfhb 5070
+2476
+3
+ceia-cehg 5070
+ceia-cehg 5070
+ceia-cehg 5070
+2477
+5
+ceii-cehh 5070
+ceii-cehh 5070
+ceii-cehh 5070
+ceii-cehh 5070
+ceii-cehh 5070
+4013
+4
+eabb-eabd 5070
+eabb-eabd 5070
+eabb-eabd 5070
+eabb-eabd 5070
+6062
+1
+gafh-gagc 5070
+2480
+3
+ceha-ceia 5070
+ceha-ceia 5070
+ceha-ceia 5070
+4016
+6
+eabc-eabg 5070
+eabc-eabg 5070
+eabc-eabg 5070
+eabc-eabg 5070
+eabc-eabg 5070
+eabc-eabg 5070
+6064
+1
+gagc-gage 5070
+2481
+4
+cehc-ceib 5070
+cehc-ceib 5070
+cehc-ceib 5070
+cehc-ceib 5070
+3505
+1
+dfhg-dfaf 5070
+2483
+2
+ceig-ceid 5070
+ceig-ceid 5070
+1973
+1
+bjhf-bjhd 5070
+2486
+4
+cehb-ceig 5070
+cehb-ceig 5070
+cehb-ceig 5070
+cehb-ceig 5070
+5047
+2
+gdad-faeh 5070
+gdad-faeh 5070
+2488
+6
+cehb-ceii 5070
+cehb-ceii 5070
+cehb-ceii 5070
+cehb-ceii 5070
+cehb-ceii 5070
+cehb-ceii 5070
+5049
+1
+fafa-faej 5070
+2491
+1
+ceij-cejb 5070
+967
+2
+bbii-jgh 5070
+bbii-jgh 5070
+969
+1
+bcba-jgj 5070
+3017
+1
+daca-dabh 5070
+4554
+2
+effc-effe 5070
+effc-effe 5070
+1483
+1
+bgbb-beid 5070
+3020
+1
+dabj-daca 5070
+6092
+1
+gaii-gajc 5070
+6606
+2
+gffd-ggag 5070
+gffd-ggag 5070
+463
+1
+eda-egd 5070
+5583
+2
+ffii-ffid 5070
+ffii-ffid 5070
+6608
+1
+ggah-ggai 5070
+5588
+2
+ffhi-ffii 5070
+ffhi-ffii 5070
+6613
+1
+ggai-ggbd 5070
+3543
+3
+eabd-dfed 5070
+eabd-dfed 5070
+eabd-dfed 5070
+6615
+2
+gggc-ggbf 5070
+gggc-ggbf 5070
+2521
+1
+cfcc-cfcb 5070
+6108
+2
+gbah-gbai 5070
+gbah-gbai 5070
+4573
+1
+effe-efhd 5070
+3038
+1
+dadj-dadi 5070
+3039
+1
+dadd-dadj 5070
+5087
+1
+faif-faih 5070
+2528
+2
+cfcf-cfci 5070
+cfcf-cfci 5070
+6624
+2
+gghf-ggce 5070
+gghf-ggce 5070

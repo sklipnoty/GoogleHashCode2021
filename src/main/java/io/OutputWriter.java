@@ -28,16 +28,29 @@ public class OutputWriter {
 
             mapping = (Map<Intersection, List<TrafficLightSchedule>>) solution.trafficLightScheduleList.stream().collect(Collectors.groupingBy(x->x.getIntersection()));
 
-            printWriter.println(intersectionSet.size());
+            List<String> outputs = new ArrayList<>();
+            int totalNumberOfIntersections = 0;
+            Set<Intersection> alreadyVisited = new HashSet<>();
 
             for(Intersection intersection : intersectionSet) {
-                printWriter.println(intersection.id);
-                printWriter.println(mapping.get(intersection).size());
 
-                for(TrafficLightSchedule trafficLightSchedule : mapping.get(intersection)) {
-                    printWriter.println(trafficLightSchedule.getIncomingStreet().name + " " + trafficLightSchedule.getDuration());
+                List<TrafficLightSchedule> trafficLightScheduleSingle = mapping.get(intersection);
+                totalNumberOfIntersections = totalNumberOfIntersections +1;
+
+                outputs.add("" +intersection.id);
+                outputs.add("" + trafficLightScheduleSingle.size());
+
+                for (TrafficLightSchedule trafficLightSchedule : trafficLightScheduleSingle) {
+                    outputs.add(""+trafficLightSchedule.getIncomingStreet().name + " " + solution.durationOfSimulation);
                 }
             }
+
+            printWriter.println(totalNumberOfIntersections);
+
+            for(String output : outputs) {
+                printWriter.println(output);
+            }
+
 
             printWriter.flush();
 
