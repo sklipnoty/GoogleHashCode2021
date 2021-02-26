@@ -66,4 +66,8 @@ public class Street {
                 ", carList=" + carList +
                 '}';
     }
+
+    public String simpleToString() {
+        return "Street :  name = " + name;
+    }
 }
