@@ -40,7 +40,7 @@ public class OutputWriter {
                 outputs.add("" + trafficLightScheduleSingle.size());
 
                 for (TrafficLightSchedule trafficLightSchedule : trafficLightScheduleSingle) {
-                    outputs.add(""+trafficLightSchedule.getIncomingStreet().name + " " + solution.durationOfSimulation);
+                    outputs.add(""+trafficLightSchedule.getIncomingStreet().name + " " + trafficLightSchedule.duration);
                 }
             }
 

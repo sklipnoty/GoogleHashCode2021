@@ -67,7 +67,6 @@ public class InputReader {
 
                 List<Street> streetList = new ArrayList<>();
                 Street startingStreet = null;
-                int idOfCar = 0;
 
              //   System.out.println(Arrays.deepToString(carline));
                 for(int j = 1; j < carline.length; j++) {
@@ -79,11 +78,9 @@ public class InputReader {
                     if(j == 1) {
                         startingStreet = streetMap.get(carline[j]);
                     }
-
-                    idOfCar = j;
                 }
 
-                Car car = new Car(idOfCar, carNumberOfStreets, streetList, startingStreet);
+                Car car = new Car(i, carNumberOfStreets, streetList, startingStreet);
                 startingStreet.getCarList().add(car);
                 allCars.add(car);
 

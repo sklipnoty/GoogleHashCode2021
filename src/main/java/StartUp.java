@@ -1,23 +1,24 @@
-import domain.ProblemStatement;
-import domain.Solution;
-import domain.Solver;
-import domain.TrafficLightSchedule;
+import domain.*;
 import io.InputReader;
 import io.OutputWriter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class StartUp {
     public static void main(String args[]) {
 
+       // SequenceGenerator sequenceGenerator = new SequenceGenerator(500);
+       // sequenceGenerator.findBestSequenceDuo(Arrays.asList(Arrays.asList(1,3,5,8), Arrays.asList(20,60)));
+
         List<String> files = new ArrayList<>();
-      //  files.add("a");
+       // files.add("a");
         files.add("b");
-      //  files.add("c");
-      //  files.add("d");
-      //  files.add("e");
-      //  files.add("f");
+        files.add("c");
+        files.add("d");
+        files.add("e");
+        files.add("f");
 
         for(String file : files) {
             InputReader inputReader = new InputReader();

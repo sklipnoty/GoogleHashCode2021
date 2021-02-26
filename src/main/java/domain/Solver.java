@@ -1,5 +1,6 @@
 package domain;
 
+import java.awt.print.PrinterGraphics;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -7,21 +8,27 @@ import java.util.stream.Collectors;
 public class Solver {
 
     public ProblemStatement problemStatement;
+    public SequenceGenerator sequenceGenerator;
 
     public Solver(ProblemStatement problemStatement) {
         this.problemStatement = problemStatement;
+        this.sequenceGenerator = new SequenceGenerator(problemStatement.durationOfSimulation);
     }
 
     public void solve() {
 
     }
 
-    public  Map<Intersection, Street> determineIntersectionPriority() {
+    public  Map<Intersection, Street> determineIntersectionPriority(Integer currentDuration) {
         Map<Intersection,Street> priorityMap = new HashMap<>();
+
+        //System.out.println("Current duration of sim " + currentDuration);
 
         for (Intersection intersection : this.problemStatement.intersectionMap.values()) {
 
             Map<Integer, Street> maxMap = new HashMap<>();
+            Map<Street, Integer> costMap = new HashMap<>();
+            int numberOfStreet = 0;
 
             for (Street street : intersection.incoming) {
 
@@ -38,8 +45,19 @@ public class Solver {
                     }
                 }
 
-                maxMap.putIfAbsent(totalCost, street);
+                totalCost = totalCost / street.carList.size() ;
+
+                costMap.putIfAbsent(street, totalCost);
+
+                if(maxMap.containsKey(totalCost)) {
+                    totalCost += numberOfStreet;
+                }
+
+                maxMap.putIfAbsent(street.carList.size(), street);
+
+                numberOfStreet += 1;
             }
+
 
             if(!maxMap.isEmpty()) {
                 Integer minValue = Collections.min(maxMap.keySet());
@@ -74,8 +92,9 @@ public class Solver {
         return scheduleList;
     }
 
-    public void moveCars(List<Car> travellingCars) {
+    public Integer moveCars(List<Car> travellingCars, Integer duration, Integer bonus) {
         List<Car> carsToRemove = new ArrayList<>();
+        Integer score = 0;
 
         for(Car car : travellingCars) {
             car.setCurrentNeededDuration(car.getCurrentNeededDuration() - 1);
@@ -92,36 +111,47 @@ public class Solver {
                 // cars is done travelling
                 carsToRemove.add(car);
                 car.currentStreet.carList.remove(car);
+
+                // add score
+                score += ((bonus) + (problemStatement.durationOfSimulation - duration));
             }
         }
 
+        for(Car car : travellingCars) {
+            if(car.id == 9697) {
+               // System.out.println(car.id + " " + car.streetList.size() + " " + car.numberOfStreets);
+                for (Street street : car.streetList) {
+                  //  System.out.println("Still has to travel : " + street.name + " " + street.time);
+                }
+            }
+        }
         for(Car car : carsToRemove) {
             travellingCars.remove(car);
         }
 
-        for(Car car : travellingCars) {
-           // System.out.println(car.id + " " + car.streetList.size() + " " + car.numberOfStreets);
-        }
+        return score;
     }
 
     public List<TrafficLightSchedule> greedySolveV2(){
         List<TrafficLightSchedule> allSchedules = new ArrayList<>();
         List<Car> travellingCars = new ArrayList<>();
+        int score = 0;
 
         //this.problemStatement.durationOfSimulation
         for(int i = 0; i < this.problemStatement.durationOfSimulation; i++) {
             //System.out.println("Simulating duration " + i);
 
             // Foreach intersection determine the best starting street!
-            Map<Intersection, Street> priority = determineIntersectionPriority();
+            Map<Intersection, Street> priority = determineIntersectionPriority(i);
 
             // Make a schedule foreach street
             List<TrafficLightSchedule> schedule = getInitialScheduleBasedOnPriority(priority, i, travellingCars);
             allSchedules.addAll(schedule);
 
             // Move cars forward with 1 simulation unit.
-            moveCars(travellingCars);
+            score += moveCars(travellingCars, i, problemStatement.bonusPoints);
 
+            //System.out.println("Score at iteration " + i + " score = " +  score);
         }
 
         //Optimize schedules!
@@ -135,7 +165,7 @@ public class Solver {
 
         for(Intersection intersection : mapping.keySet()) {
 
-            System.out.println("Intersection " + intersection.id);
+            //System.out.println("Intersection " + intersection.id);
 
             List<TrafficLightSchedule> sorted = mapping.get(intersection);
             sorted.sort(Comparator.comparing(TrafficLightSchedule::getPickedAtDuration));
@@ -146,7 +176,7 @@ public class Solver {
             List<Street> incomingStreetsList = new ArrayList<>();
 
             for(Integer simulationRound : sortedMap.keySet()) {
-                System.out.println(simulationRound + " " + sortedMap.get(simulationRound).size() + " " + sortedMap.get(simulationRound).get(0).incomingStreet.name);
+              //  System.out.println(simulationRound + " " + sortedMap.get(simulationRound).size() + " " + sortedMap.get(simulationRound).get(0).incomingStreet.name);
                 incomingStreets.add(sortedMap.get(simulationRound).get(0).incomingStreet);
                 incomingStreetsList.add(sortedMap.get(simulationRound).get(0).incomingStreet);
             }
@@ -156,11 +186,34 @@ public class Solver {
             if(incomingStreets.size() == 1) {
                 // no problem just turn that street green the whole time
                 trafficLightScheduleListFinal.add(new TrafficLightSchedule(intersection, streetList.get(0), problemStatement.durationOfSimulation));
-            } else if(incomingStreets.size() > 1) {
+            } else if(incomingStreets.size() == 2) {
                 // find good correlation
                 // bad approach: Modify duration for occurences > 1 // simply turn them on cyclicly for 1 sec
                 Map<Street, Long> countMap = incomingStreetsList.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+                //System.out.println(countMap);
 
+                Map<Street, List<Integer>> sequenceMaps = new HashMap<>();
+
+                for(TrafficLightSchedule schedule : sorted) {
+                    sequenceMaps.putIfAbsent(schedule.incomingStreet, new ArrayList<>());
+                    sequenceMaps.get(schedule.incomingStreet).add(schedule.pickedAtDuration);
+                }
+
+                List<List<Integer>> sequences = new ArrayList<>();
+                List<Street> streets = new ArrayList<>();
+
+                for(Street street : sequenceMaps.keySet()) {
+                    sequences.add(sequenceMaps.get(street));
+                    streets.add(street);
+                }
+
+                List<Integer> combo = sequenceGenerator.findBestSequenceDuo(sequences);
+
+                for(int i = 0; i < combo.size(); i++) {
+                    trafficLightScheduleListFinal.add(new TrafficLightSchedule(intersection, streets.get(i), combo.get(i)));
+                }
+
+            } else if(incomingStreets.size() > 2){
                 for(Street street : streetList) {
                     trafficLightScheduleListFinal.add(new TrafficLightSchedule(intersection, street, 1));
                 }
@@ -180,7 +233,7 @@ public class Solver {
             sorted.sort(Comparator.comparing(TrafficLightSchedule::getPickedAtDuration));
 
             for (TrafficLightSchedule trafficLightSchedule : sorted) {
-                System.out.println("intersection " + intersection.id + " street prior = " + trafficLightSchedule.incomingStreet.name + " duration picked " + trafficLightSchedule.pickedAtDuration);
+               // System.out.println("intersection " + intersection.id + " street prior = " + trafficLightSchedule.incomingStreet.name + " duration picked " + trafficLightSchedule.pickedAtDuration);
             }
         }
     }
